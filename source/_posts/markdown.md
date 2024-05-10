@@ -3,43 +3,44 @@ title: Markdown
 date: 2020-12-14 18:28:43
 background: bg-[#6319bf]
 tags:
-    - md
-    - Markup
-    - text
-    - format
+  - md
+  - Markup
+  - text
+  - format
 categories:
-    - Programming
+  - Programming
 intro: This is a quick reference cheat sheet to the Markdown syntax.
 plugins:
-    - copyCode
+  - copyCode
 ---
 
-Markdown Quick Reference
----------------
+## Markdown Quick Reference
 
 ### Headers (atx style)
 
 ```markdown
 # h1
+
 ## h2
+
 ### h3
+
 #### h4
+
 ##### h5
+
 ###### h6
 ```
 
 ### Headers (setext style)
 
 ```markdown
-Header 1
-========
+# Header 1
 ```
 
 ```markdown
-Header 2
---------
+## Header 2
 ```
-
 
 ### Blockquotes
 
@@ -51,17 +52,17 @@ Header 2
 > > Blockquote
 ```
 
-
 ### Unordered List {.row-span-2}
 
 ```markdown
-* Item 1
-* Item 2
-    * item 3a
-    * item 3b
+- Item 1
+- Item 2
+  - item 3a
+  - item 3b
 ```
 
 or
+
 ```markdown
 - Item 1
 - Item 2
@@ -70,9 +71,10 @@ or
 or
 
 ```markdown
-+ Item 1
-+ Item 2
+- Item 1
+- Item 2
 ```
+
 or
 
 ```markdown
@@ -85,11 +87,9 @@ or
 ```markdown
 1. Item 1
 2. Item 2
-    a. item 3a
-    b. item 3b
+   a. item 3a
+   b. item 3b
 ```
-
-
 
 ### Links
 
@@ -106,21 +106,16 @@ or
 <http://google.com>
 ```
 
-
-
-
-
-
 ### Emphasis
 
 ```markdown
-*italic*
+_italic_
 _italic_
 ```
 
 ```markdown
 **bold**
-__bold__
+**bold**
 ```
 
 ```markdown
@@ -128,75 +123,73 @@ __bold__
 ~~struck out~~
 ```
 
-
-
-
 ### Horizontal line
 
 Hyphens
+
 ```markdown
 ---
 ```
 
 Asterisks
+
 ```markdown
-***
+---
 ```
 
 Underscores
+
 ```markdown
-___
+---
 ```
-
-
-
-
 
 ### Code
-~~~markdown
+
+````markdown
 ```javascript
-console.log("This is a block code")
+console.log("This is a block code");
 ```
-~~~
+````
 
-```markdown
-~~~css
-.button { border: none; }
-~~~
+````markdown
+```css
+.button {
+  border: none;
+}
 ```
+````
 
+````
 
 ```markdown
     4 space indent makes a code block
-```
-
+````
 
 #### inline code
+
 ```markdown
 `Inline code` has back-ticks around it
 ```
-
-
 
 ### Tables {.col-span-2}
 
 ```markdown
 | Left column | Center column | Right column |
-|:------------|:-------------:|-------------:|
+| :---------- | :-----------: | -----------: |
 | Cell 1      |   Centered    |        $1600 |
 | Cell 2      |    Cell 3     |          $12 |
 ```
 
 Simple style
+
 ```markdown
-Left column | Center column | Right column
-:----------:|:-------------:|:-----------:
-   Cell 1   |   Centered    |    $1600
-   Cell 2   |    Cell 3     |     $12
+| Left column | Center column | Right column |
+| :---------: | :-----------: | :----------: |
+|   Cell 1    |   Centered    |    $1600     |
+|   Cell 2    |    Cell 3     |     $12      |
 ```
+
 A markdown table generator: [tableconvert.com](https://tableconvert.com/)
-
-
 
 ### Images {.col-span-2}
 
@@ -207,6 +200,7 @@ A markdown table generator: [tableconvert.com](https://tableconvert.com/)
 ```
 
 #### Image with link
+
 ```markdown
 [![GitHub Logo](/images/logo.png)](https://github.com/)
 
@@ -214,18 +208,18 @@ A markdown table generator: [tableconvert.com](https://tableconvert.com/)
 ```
 
 #### Reference style
+
 ```markdown
 ![alt text][logo]
 
 [logo]: /images/logo.png "Logo Title"
 ```
 
-
 ### Backslash escapes
 
-| Characters | Escape | Description |
-|------------|--------|-------------|
-| \\         | \\\\   | backslash   |
+| Characters | Escape | Description           |
+| ---------- | ------ | --------------------- |
+| \\         | \\\\   | backslash             |
 | \`         | \\\`   | backtick              |
 | \*         | \\\*   | asterisk              |
 | \_         | \\\_   | underscore            |
@@ -237,4 +231,5 @@ A markdown table generator: [tableconvert.com](https://tableconvert.com/)
 | \-         | \\\-   | minus sign \(hyphen\) |
 | \.         | \\\.   | dot                   |
 | \!         | \\\!   | exclamation mark      |
+
 {.show-header}

@@ -3,20 +3,20 @@ title: Terraform
 date: 2024-4-18
 background: bg-[#7f48be]
 tags:
-    - container
-    - virtual
+  - container
+  - virtual
 categories:
-    - Programming
+  - Programming
 intro: |
-    This is a quick reference cheat sheet for [Terraform](https://docs.docker.com/get-started/).
+  This is a quick reference cheat sheet for [Terraform](https://docs.docker.com/get-started/).
 plugins:
-    - copyCode
+  - copyCode
 ---
 
 ## HCL Syntax:
 
 ```
-(Block Name)  (Resource Type)  (Resource Name) 
+(Block Name)  (Resource Type)  (Resource Name)
       |           |                 |
       ▽           ▽                 ▽
   resource "aws_instance" "my_aws_server" {
@@ -28,13 +28,14 @@ plugins:
 }
 
 ```
+
 ### Variable Types
 
 1. Simple types: number, string, bool, null.
 
-2. Complex types: 
-      Collection types: list, map, set
-      Structural types: `object({<KEY> = <TYPE>, ...})`, `tuple([<TYPE>, ...])`
+2. Complex types:
+   Collection types: list, map, set
+   Structural types: `object({<KEY> = <TYPE>, ...})`, `tuple([<TYPE>, ...])`
 
 Order of Precedence:
 defaults < env vars < terraform.tfvars file < terraform.tfvars.json file < .auto.tfvars < command line (-var & -var-file)
@@ -89,6 +90,7 @@ variable "egress_dsg" {
 ## Meta-Arguments
 
 ### Loops
+
 count, for_each, [for( o in var.list: o.id])
 
 ```
@@ -148,6 +150,7 @@ output "private_addresses"{
 ### depends_on
 
 if two resources depends on each other, depends_on specifies that dependency to enforce ordering
+
 ```
 resource "aws_iam_role_policy" "example" {
     name = "example"
@@ -171,20 +174,21 @@ resource "aws_instance" "my_server" {
     ]
 ```
 
-### lifecycle 
+### lifecycle
 
 A set of meta arguments to control behavior specific resources
+
 ```
 resources "aws_instance" "server" {
   ami           = "ami-a1b3414"
   instance_type = "t2.micro"
-  
+
   lifecycle {
     create_before_destroy = true
     ignore_changes = [
       # Some resources have metadata
       # modified automatically outside of TF
-      
+
       tags
     ]
   }
@@ -197,22 +201,21 @@ resources "aws_instance" "server" {
 
 ### Built-In functions
 
-| Function                                        | Result                  |
-| ------------------------------------------------|-------------------------|
-| `max(5, 10, 9)`                                   | 12                      |
-| `min(5, 10, 9)`                                   | 5                       |
-| `format("There are %d servers", 4)`               | There are 4 lights      |
-| `join("," ["foo", "bar", "baz"])`                 | foo,bar,baz             |
-| `split(",", "foo,bar,baz")`                       | `["foo", "bar", "baz"]`   |
-| `replace("hi world", "/w.*d/", "mom"`             | hi mom                  |
-| `substr("hello world", 1, 4)`                     | ello                    |
-| `lookup({a="lol", b="sad"}, "a", "what?")`        | lol                     |
-| `lookup({a="lol", b="sad"}, "c", "what?")`        | what?                   |
-| `slice(["a", "b", "c", "d"], 1, 3)`               | `["b", "c"]`              |
-| `timestamp()`                                     | "2022-04-02T05:52:48Z"  |
-| `cidr("10.1.2.240/28", 1)`                        | 10.1.2.241              |
-| `cidr("10.1.2.240/28", 14)`                       | 10.1.2.254              |
-
+| Function                                   | Result                  |
+| ------------------------------------------ | ----------------------- |
+| `max(5, 10, 9)`                            | 12                      |
+| `min(5, 10, 9)`                            | 5                       |
+| `format("There are %d servers", 4)`        | There are 4 lights      |
+| `join("," ["foo", "bar", "baz"])`          | foo,bar,baz             |
+| `split(",", "foo,bar,baz")`                | `["foo", "bar", "baz"]` |
+| `replace("hi world", "/w.*d/", "mom"`      | hi mom                  |
+| `substr("hello world", 1, 4)`              | ello                    |
+| `lookup({a="lol", b="sad"}, "a", "what?")` | lol                     |
+| `lookup({a="lol", b="sad"}, "c", "what?")` | what?                   |
+| `slice(["a", "b", "c", "d"], 1, 3)`        | `["b", "c"]`            |
+| `timestamp()`                              | "2022-04-02T05:52:48Z"  |
+| `cidr("10.1.2.240/28", 1)`                 | 10.1.2.241              |
+| `cidr("10.1.2.240/28", 14)`                | 10.1.2.254              |
 
 ### Provider block
 
@@ -231,6 +234,7 @@ provider "aws" {
 ```
 
 ### Requiring Providers
+
 ```
 terraform {
 
@@ -243,9 +247,11 @@ terraform {
   }
 }
 ```
+
 ### Locals block
 
 A local value assigns a name to an expression, so you can use the name multiple times within a module instead of repeating the expression
+
 ```
 locals {
   service_name = "forum"
@@ -255,7 +261,7 @@ locals {
 # once local declared you can reference it
 locals {
   common_tags = {
-    Service = local.service_name 
+    Service = local.service_name
     Owner   = local.owner
 ```
 
@@ -310,6 +316,7 @@ module "myec2" {
 A backend defines where Terraform stores its state data files.
 
 Available backends: local(default), remote, azurerm, consul, cos, gcs, http, Kubernetes, oss, pg, s3
+
 ```
 terraform {
   backend "remote" {
@@ -337,12 +344,15 @@ terraform {
 | `path.module`                                     | Location of expresssion |
 | `path.root`                                       | Root Module location    |
 | `terraform.workspace`                             | Current workspace       |
---- 
-## Terraform CLI 
+
+---
+
+## Terraform CLI
 
 Create/Edit TF config file -> init -> plan -> validate -> apply -> destroy
 
 ### Initialization
+
 ```sh
 terraform init [options]
 
@@ -351,9 +361,11 @@ terraform init [options]
     -backend=false      # Disable backend & use previous Initialization
     -migrate-state      # reconfigure backend & attempt to migrate any existing state
 ```
+
 ### Planning
 
 Generates & review an execution plan
+
 ```sh
 terraform plan [options]
 
@@ -362,13 +374,15 @@ terraform plan [options]
     -input=true         # ask for input for vars if not directly set
     -out=path           # write a plan file to given path. can be used as input for "apply"
     -refresh-only       # verifies remote object consistency without proposing actions to undo changes done outside TF
-    -destroy            # create plan to destroy all objects currenly managed 
+    -destroy            # create plan to destroy all objects currenly managed
     -target=resource    # target planning to given resouce & its dependencies only.
 
 terraform plan -refresh-only # updates state to match changes made outside of TF. Good for drift detection
 
 ```
+
 ### Validation
+
 ```sh
 terraform validate      # Validates the config files for errors
 
@@ -377,6 +391,7 @@ terraform validate      # Validates the config files for errors
 ### Apply
 
 Executes changes to infra
+
 ```sh
 terraform apply [options]
 
@@ -408,9 +423,9 @@ terraform destroy -target aws_vpc.my_vpc -auto-approve
 # Miscellaneous
 
 ```sh
-terraform state show aws_instance.my_vm 
+terraform state show aws_instance.my_vm
 terraform state pull > my_terraform.tfstate
-terraform state mv aws_iam_role.my_ssm_role 
+terraform state mv aws_iam_role.my_ssm_role
 terraform state list
 terraform state rm aws_instance.my_server
 
@@ -420,15 +435,16 @@ terraform graph | dot -Tpng > graph.png
 ```
 
 # Logging
+
 log levels = TRACE > DEBUG > INFO > WARN > ERROR
 
-```sh 
+```sh
 export TF_LOG_CORE=TRACE     # enable core logging
 export TF_LOG_PROVIDER=TRACE # enable provider logging
 export TF_LOG_PATH=logs.txt  # to persist logs
 ```
 
-# Also See 
+# Also See
 
 - [Docs](https://developer.hashicorp.com/terraform/language)
 - [Good FCC Article](https://www.freecodecamp.org/news/terraform-certified-associate-003-study-notes/)

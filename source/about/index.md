@@ -8,6 +8,7 @@ Welcome to [QuickRef] – your go-to resource for [describing content]. Designed
 Our user-friendly interface ensures rapid access to the information you need. Whether you're [coding/studying/working], you'll find [specific benefits or standout features].
 
 Key Features:
+
 - Users can grasp essential concepts or instructions in a short period, making cheat sheets ideal for learning on the go.
 
 - By offering quick access to frequently used information, cheat sheets boost productivity by reducing the need to search or look up details repeatedly.
@@ -17,7 +18,6 @@ Key Features:
 - Quality cheat sheets are often updated to reflect the latest information, ensuring accuracy and relevance.
 
 - Cheat sheets can be used as study aids, helping learners memorize key information, formulas, or concepts.
-  
 - In programming or technical fields, cheat sheets offer quick syntax references, ensuring proper code usage.
 
 - By avoiding the need to seek through lengthy documentation, cheat sheets save users valuable time during tasks or learning.

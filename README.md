@@ -4,13 +4,9 @@
 [![License](https://badgen.net/badge/license/MIT/blue)](https://github.com/Fechin/reference/blob/main/LICENSE)
 [![Follow us on Twitter](https://img.shields.io/twitter/follow/FechinLi?style=social)](https://twitter.com/FechinLi)
 
-
 Reference is a collection of cheat sheets contributed by open source angels. It shares a quick reference cheat sheet for developers in a nice layout. \[ [中文版](https://github.com/jaywcjlove/reference) | ... \]
 
 We encourage you to share your own cheat sheets with the community and make Reference even better. If you notice a cheat sheet that could be improved, feel free to submit a [pull request](#-contributing).
-
-
-
 
 ## 👀 Live Demonstration
 
@@ -18,11 +14,9 @@ You can view the cheat sheets live at [https://cheatsheets.zip](https://cheatshe
 
 [![Quick reference](https://cheatsheets.zip/assets/image/preview.png)](https://cheatsheets.zip)
 
-
 ## 📚 Cheat Sheets List
 
 Reference provides cheat sheets for the following:
-
 
 <details>
 <summary>Programming</summary>
@@ -35,8 +29,8 @@ Reference provides cheat sheets for the following:
 - [LaTeX](https://cheatsheets.zip/latex.html): This cheat sheet summarizes a reference list of [LaTeX](https://www.latex-project.org/) commonly used display math notation and some application examples of [KaTeX](https://katex.org/).
 - [Rust](https://cheatsheets.zip/rust.html): The Rust quick reference cheat sheet that aims at providing help on writing basic syntax and methods.
 - [C#](https://cheatsheets.zip/cs.html): C# quick reference cheat sheet that provides basic syntax and methods.
-- [Laravel](https://cheatsheets.zip/laravel.html): [Laravel](https://laravel.com/docs/8.x/) is an expressive and progressive web application framework for PHP. 
-This cheat sheet provides a reference for common commands and features for Laravel 8.
+- [Laravel](https://cheatsheets.zip/laravel.html): [Laravel](https://laravel.com/docs/8.x/) is an expressive and progressive web application framework for PHP.
+  This cheat sheet provides a reference for common commands and features for Laravel 8.
 - [Dart](https://cheatsheets.zip/dart.html): A Dart cheat sheet with the most important concepts, functions, methods, and more. A complete quick reference for beginners.
 - [JSON](https://cheatsheets.zip/json.html): This is a quick reference cheat sheet for understanding and writing JSON format configuration files.
 - [Hook](https://cheatsheets.zip/hook.html): The [Hook](https://github.com/hook-lang/hook/) cheat sheet is a one-page reference sheet for the Hook programming language.
@@ -67,7 +61,7 @@ This cheat sheet provides a reference for common commands and features for Larav
 - [Mitmproxy](https://cheatsheets.zip/mitmproxy.html): [mitmproxy](https://mitmproxy.org/) is a free and open source interactive HTTPS proxy. This is a quick reference cheat sheet to the mitmproxy.
 - [XPath](https://cheatsheets.zip/xpath.html): This is an [XPath](https://en.wikipedia.org/wiki/XPath) selectors cheat sheet, which lists commonly used XPath positioning methods and CSS selectors
 - [Emacs](https://cheatsheets.zip/emacs.html): [Emacs](https://www.gnu.org/software/emacs) is the extensible, customizable, self-documenting real time display text editor.
-This reference was made for Emacs 27.
+  This reference was made for Emacs 27.
 - [Emmet](https://cheatsheets.zip/emmet.html): [Emmet](https://emmet.io/) is a web-developer’s toolkit for boosting HTML & CSS code writing, which allows you to write large HTML code blocks at speed of light using well-known CSS selectors.
 - [RegEX](https://cheatsheets.zip/regex.html): A quick reference for regular expressions (regex), including symbols, ranges, grouping, assertions and some sample patterns to get you started.
 - [Vim](https://cheatsheets.zip/vim.html): A useful collection of [Vim](http://www.vim.org/) 8.2 quick reference cheat sheets to help you learn vim editor faster.
@@ -210,9 +204,8 @@ This reference was made for Emacs 27.
 
 </details>
 
-
-
 ## 🗂️ Directory structure
+
 ```
 .
 ├── source
@@ -234,9 +227,6 @@ This reference was made for Emacs 27.
     └── coo      # Theme files
 ```
 
-
-
-
 ## 🤝 Contributing
 
 We would like to extend our gratitude to you for considering a contribution to Reference. Your support is what makes CheatSheets.zip a truly amazing resource. Please feel free to [submit issues](https://github.com/Fechin/reference/issues/new?assignee=Fechin) and enhancement requests.
@@ -249,10 +239,7 @@ For consistency, we encourage you to refer to the [https://cheatsheets.zip/quick
 4. Run `npm run dev` to start a dev server. This serves the project and live reloads when any files are changed, then visit http://127.0.0.1:4000 preview.
 5. Submit a pull request and wait for it to be reviewed and merged.
 
-
-
 To create or edit a cheat sheet, you'll need to create or edit a markdown file in `source/_posts/{filename}.md`. The file should include a front matter section with the following format:
-
 
 ```markdown
 ---
@@ -266,13 +253,12 @@ categories:
   intro: This is a reference of styles that you can use on quickref cheat sheets!
 ---
 ```
-Only the `title` and `intro` fields are required, and the other options can be left blank. 
 
+Only the `title` and `intro` fields are required, and the other options can be left blank.
 
 <a href="https://github.com/Fechin/reference/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Fechin/reference" />
 </a>
-
 
 ## 🐦 Follow us on Twitter
 
@@ -282,8 +268,6 @@ Stay up-to-date with our project by following us on Twitter! Get all the latest 
 
 <a href="https://www.buymeacoffee.com/randy8080"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=randy8080&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
 
-
 ## 📃 License
 
 The project is licensed under the [MIT](https://github.com/Fechin/reference/blob/main/LICENSE) License and is maintained by [Fechin](https://github.com/Fechin).
-

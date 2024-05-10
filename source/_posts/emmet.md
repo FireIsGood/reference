@@ -3,23 +3,20 @@ title: Emmet
 date: 2020-12-14 18:28:43
 background: bg-[#95c844]
 tags:
-    - snippets
-    - coding
-    - html
-    - css
-    - abbr
+  - snippets
+  - coding
+  - html
+  - css
+  - abbr
 categories:
-    - Toolkit
+  - Toolkit
 intro: |
-    [Emmet](https://emmet.io/) is a web-developer’s toolkit for boosting HTML & CSS code writing, which allows you to write large HTML code blocks at speed of light using well-known CSS selectors.
+  [Emmet](https://emmet.io/) is a web-developer’s toolkit for boosting HTML & CSS code writing, which allows you to write large HTML code blocks at speed of light using well-known CSS selectors.
 plugins:
-    - copyCode
+  - copyCode
 ---
 
-
-Emmet Syntax
----------------
-
+## Emmet Syntax
 
 ### Getting started
 
@@ -30,34 +27,31 @@ Let us start to improve your development to the speed of light.
 - [Emmet for Coda](https://emmet.io/download/coda/) _(emmet.io)_
 - [Emmet for Atom](https://github.com/emmetio/emmet-atom#readme) _(github.com)_
 
+### Multiplication: \*
 
-### Multiplication: *
-
-ul>li*5
+ul>li\*5
 
 ```html
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
 ```
 
-
-
 ### Child: >
+
 `nav>ul>li`
 
 ```html
 <nav>
-    <ul>
-        <li></li>
-    </ul>
+  <ul>
+    <li></li>
+  </ul>
 </nav>
 ```
-
 
 ### Custom attributes {.col-span-2}
 
@@ -79,10 +73,6 @@ td[rowspan=2 colspan=3 title]
 <div a="value1" b="value2"></div>
 ```
 
-
-
-
-
 ### Text: {}
 
 a{Click me}
@@ -96,7 +86,6 @@ p>{Click }+a{here}+{ to continue}
 ```html {.wrap}
 <p>Click <a href="">here</a> to continue</p>
 ```
-
 
 ### ID and CLASS attributes {.row-span-2}
 
@@ -112,7 +101,6 @@ p>{Click }+a{here}+{ to continue}
 <div class="title"></div>
 ```
 
-
 form#search.wide
 
 ```html
@@ -125,8 +113,8 @@ p.class1.class2.class3
 <p class="class1 class2 class3"></p>
 ```
 
-
 ### Implicit tag names {.row-span-2}
+
 .class
 
 ```html
@@ -139,25 +127,23 @@ em>.class
 <em><span class="class"></span></em>
 ```
 
-
 ul>.class
+
 ```html
 <ul>
-    <li class="class"></li>
+  <li class="class"></li>
 </ul>
 ```
-
 
 table>.row>.col
 
 ```html
 <table>
-    <tr class="row">
-        <td class="col"></td>
-    </tr>
+  <tr class="row">
+    <td class="col"></td>
+  </tr>
 </table>
 ```
-
 
 ### Sibling: +
 
@@ -169,83 +155,79 @@ div+p+bq
 <blockquote></blockquote>
 ```
 
-
 ### Climb-up: ^
 
 div+div>p>span+em^bq
 
-
 ```html
 <div></div>
 <div>
-    <p><span></span><em></em></p>
-    <blockquote></blockquote>
+  <p><span></span><em></em></p>
+  <blockquote></blockquote>
 </div>
 ```
-
 
 div+div>p>span+em^^bq
 
 ```html
 <div></div>
 <div>
-    <p><span></span><em></em></p>
+  <p><span></span><em></em></p>
 </div>
 <blockquote></blockquote>
 ```
 
-
 ### Grouping: ()
 
-div>(header>ul>li*2>a)+footer>p
+div>(header>ul>li\*2>a)+footer>p
 
 ```html
 <div>
-    <header>
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
-    </header>
-    <footer>
-        <p></p>
-    </footer>
+  <header>
+    <ul>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </header>
+  <footer>
+    <p></p>
+  </footer>
 </div>
 ```
 
-(div>dl>(dt+dd)*4)+footer>p
+(div>dl>(dt+dd)\*4)+footer>p
+
 ```html
 <div>
-    <dl>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-    </dl>
+  <dl>
+    <dt></dt>
+    <dd></dd>
+    <dt></dt>
+    <dd></dd>
+    <dt></dt>
+    <dd></dd>
+    <dt></dt>
+    <dd></dd>
+  </dl>
 </div>
 <footer>
-    <p></p>
+  <p></p>
 </footer>
 ```
 
-
 ### $ {.row-span-2}
 
-ul>li.item$*3
+ul>li.item$\*3
 
 ```html
 <ul>
-    <li class="item1"></li>
-    <li class="item2"></li>
-    <li class="item3"></li>
+  <li class="item1"></li>
+  <li class="item2"></li>
+  <li class="item3"></li>
 </ul>
 ```
 
-h$[title=item$]{Header $}*3
+h$[title=item$]{Header $}\*3
 
 ```html
 <h1 title="item1">Header 1</h1>
@@ -253,35 +235,36 @@ h$[title=item$]{Header $}*3
 <h3 title="item3">Header 3</h3>
 ```
 
-ul>li.item$$$*3
+ul>li.item$$$\*3
 
 ```html
 <ul>
-    <li class="item001"></li>
-    <li class="item002"></li>
-    <li class="item003"></li>
+  <li class="item001"></li>
+  <li class="item002"></li>
+  <li class="item003"></li>
 </ul>
 ```
 
-ul>li.item$@-*3
+ul>li.item$@-\*3
+
 ```html
 <ul>
-    <li class="item3"></li>
-    <li class="item2"></li>
-    <li class="item1"></li>
+  <li class="item3"></li>
+  <li class="item2"></li>
+  <li class="item1"></li>
 </ul>
 ```
 
-ul>li.item$@2*3
+ul>li.item$@2\*3
+
 ```html
 <ul>
-    <li class="item2"></li>
-    <li class="item3"></li>
-    <li class="item4"></li>
+  <li class="item2"></li>
+  <li class="item3"></li>
+  <li class="item4"></li>
 </ul>
 ```
 
-Also see {.cols-1}
---------
+## Also see {.cols-1}
 
-* [Emmet Cheat sheet](https://docs.emmet.io/cheat-sheet/) _(docs.emmet.io)_
+- [Emmet Cheat sheet](https://docs.emmet.io/cheat-sheet/) _(docs.emmet.io)_

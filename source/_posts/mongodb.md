@@ -255,7 +255,6 @@ db.coll.find({}).sort({"year": 1, "rating": -1}).skip(10).limit(3)
 db.coll.find().readConcern("majority")
 ```
 
-
 ## Databases and Collections { .cols-2 }
 
 ### Drop { .row-span-1 }
@@ -301,7 +300,6 @@ db.coll.totalSize()
 db.coll.validate({full: true})
 db.coll.renameCollection("new_coll", true) // 2nd parameter to drop the target collection if exists
 ```
-
 
 ## Indexes {.cols-2}
 
@@ -445,6 +443,7 @@ sh.addShardToZone("shard0000", "JFK")
 sh.removeShardFromZone("shard0000", "NYC")
 sh.removeRangeFromZone("mydb.coll", {a: 1, b: 1}, {a: 10, b: 10})
 ```
+
 ### Change Streams {.row-span-1 }
 
 ```mongosh
