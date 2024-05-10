@@ -47,12 +47,12 @@ plugins:
   What are some unique gifts I can give to my business partners?
   ```
 - **Choose a random contest winner(s) from a long list of names or emails**
-  `{.wrap}
- I want to choose a winner from a list of 100 names, can you help?
-`
-  `{.wrap}
- Can you randomly pick 5 email addresses from a list of 1000 for a giveaway contest?
-`
+  ```{.wrap}
+  I want to choose a winner from a list of 100 names, can you help?
+  ```
+  ```{.wrap}
+  Can you randomly pick 5 email addresses from a list of 1000 for a giveaway contest?
+  ```
   {.collapsible}
 
 [💡 I Got an IDEA](https://github.com/Fechin/reference/blob/main/source/_posts/chatgpt.md)
@@ -450,39 +450,39 @@ plugins:
  Explain quantum computing in simple terms
 `
 
-         ``` {.wrap}
-         Got any creative ideas for a 10 year old’s birthday?
-         ```
+             ``` {.wrap}
+             Got any creative ideas for a 10 year old’s birthday?
+             ```
 
-         ``` {.wrap}
-         How do I make an HTTP request in JavaScript?
-         ```
+             ``` {.wrap}
+             How do I make an HTTP request in JavaScript?
+             ```
 
-         ``` {.wrap}
-         Can you tell me about the events leading up to the American Civil War?
-         ```
+             ``` {.wrap}
+             Can you tell me about the events leading up to the American Civil War?
+             ```
 
-         ``` {.wrap}
-         What can you tell me about the invention of the printing press?
-         ```
+             ``` {.wrap}
+             What can you tell me about the invention of the printing press?
+             ```
 
-         ``` {.wrap}
-         Can you research the history of the Olympic Games?
-         ```
+             ``` {.wrap}
+             Can you research the history of the Olympic Games?
+             ```
 
-         ``` {.wrap}
-         Can you give me information about the French Revolution?
-         ```
+             ``` {.wrap}
+             Can you give me information about the French Revolution?
+             ```
 
-         ``` {.wrap}
-         I'm interested in the history of the Byzantine Empire. Can you help me learn more?
-         ```
+             ``` {.wrap}
+             I'm interested in the history of the Byzantine Empire. Can you help me learn more?
+             ```
 
-         ``` {.wrap}
-         etc...
-         ```
+             ``` {.wrap}
+             etc...
+             ```
 
-         ```
+             ```
 
   {.collapsible}
 
@@ -553,153 +553,153 @@ plugins:
  Create meta descriptions and title tags for [topic]
 `
 
-         ``` {.wrap}
-         Find opportunities for internal linking related to [topic]
-         ```
+             ``` {.wrap}
+             Find opportunities for internal linking related to [topic]
+             ```
 
-         ``` {.wrap}
-         Generate ideas for blog posts and article topics on [topic]
-         ```
+             ``` {.wrap}
+             Generate ideas for blog posts and article topics on [topic]
+             ```
 
-         ``` {.wrap}
-         Research industry-specific terminology for use in [topic] content
-         ```
+             ``` {.wrap}
+             Research industry-specific terminology for use in [topic] content
+             ```
 
-         ``` {.wrap}
-         Find authoritative websites to acquire backlinks for [topic] content
-         ```
+             ``` {.wrap}
+             Find authoritative websites to acquire backlinks for [topic] content
+             ```
 
-         ``` {.wrap}
-         Create an XML sitemap example related to [topic]
-         ```
+             ``` {.wrap}
+             Create an XML sitemap example related to [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best meta tags for [topic]
-         ```
+             ``` {.wrap}
+             Research the best meta tags for [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best internal linking structure for [topic] content
-         ```
+             ``` {.wrap}
+             Research the best internal linking structure for [topic] content
+             ```
 
-         ``` {.wrap}
-         Generate a list of questions people ask about [topic]
-         ```
+             ``` {.wrap}
+             Generate a list of questions people ask about [topic]
+             ```
 
-         ``` {.wrap}
-         Create a list of the best alt tags for images related to [topic]
-         ```
+             ``` {.wrap}
+             Create a list of the best alt tags for images related to [topic]
+             ```
 
-         ``` {.wrap}
-         Create a list of related subtopics for [topic]
-         ```
+             ``` {.wrap}
+             Create a list of related subtopics for [topic]
+             ```
 
-         ``` {.wrap}
-         Find the best time to publish content related to [topic]
-         ```
+             ``` {.wrap}
+             Find the best time to publish content related to [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best external linking strategies for [topic]
-         ```
+             ``` {.wrap}
+             Research the best external linking strategies for [topic]
+             ```
 
-         ``` {.wrap}
-         Find the most popular tools used for [topic] SEO
-         ```
+             ``` {.wrap}
+             Find the most popular tools used for [topic] SEO
+             ```
 
-         ``` {.wrap}
-         Create a list of potential influencers for [topic]
-         ```
+             ``` {.wrap}
+             Create a list of potential influencers for [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best schema markup for [topic]
-         ```
+             ``` {.wrap}
+             Research the best schema markup for [topic]
+             ```
 
-         ``` {.wrap}
-         Find the best header tags for [topic] content
-         ```
+             ``` {.wrap}
+             Find the best header tags for [topic] content
+             ```
 
-         ``` {.wrap}
-         Create a list of potential link-building opportunities for [topic]
-         ```
+             ``` {.wrap}
+             Create a list of potential link-building opportunities for [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best anchor text for [topic] backlinks
-         ```
+             ``` {.wrap}
+             Research the best anchor text for [topic] backlinks
+             ```
 
-         ``` {.wrap}
-         Create a list of potential guest blogging opportunities for [topic]
-         ```
+             ``` {.wrap}
+             Create a list of potential guest blogging opportunities for [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best local SEO strategies for [topic]
-         ```
+             ``` {.wrap}
+             Research the best local SEO strategies for [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best analytics tools for [topic] website performance
-         ```
+             ``` {.wrap}
+             Research the best analytics tools for [topic] website performance
+             ```
 
-         ``` {.wrap}
-         Create a list of potential partnerships for [topic]
-         ```
+             ``` {.wrap}
+             Create a list of potential partnerships for [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best tactics for [topic] mobile optimization
-         ```
+             ``` {.wrap}
+             Research the best tactics for [topic] mobile optimization
+             ```
 
-         ``` {.wrap}
-         Research the best tactics for [topic] e-commerce optimization. Provide keyword clusters.
-         ```
+             ``` {.wrap}
+             Research the best tactics for [topic] e-commerce optimization. Provide keyword clusters.
+             ```
 
-         ``` {.wrap}
-         Create a list of potential affiliate marketing opportunities for [topic]
-         ```
+             ``` {.wrap}
+             Create a list of potential affiliate marketing opportunities for [topic]
+             ```
 
-         ``` {.wrap}
-         What are the best affiliate marketing websites for [topic]
-         ```
+             ``` {.wrap}
+             What are the best affiliate marketing websites for [topic]
+             ```
 
-         ``` {.wrap}
-         What are the best tactics for [topic] international SEO
-         ```
+             ``` {.wrap}
+             What are the best tactics for [topic] international SEO
+             ```
 
-         ``` {.wrap}
-         Create a list of potential podcast or podcast guest opportunities for [topic]
-         ```
+             ``` {.wrap}
+             Create a list of potential podcast or podcast guest opportunities for [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best tactics for [topic] Google My Business optimization
-         ```
+             ``` {.wrap}
+             Research the best tactics for [topic] Google My Business optimization
+             ```
 
-         ``` {.wrap}
-         Find popular content topics related to [topic]
-         ```
+             ``` {.wrap}
+             Find popular content topics related to [topic]
+             ```
 
-         ``` {.wrap}
-         Research the best SEO tactics for [topic] and provide actionable steps
-         ```
+             ``` {.wrap}
+             Research the best SEO tactics for [topic] and provide actionable steps
+             ```
 
-         ``` {.wrap}
-         Create a list of potential video series or webinar ideas related to [topic]
-         ```
+             ``` {.wrap}
+             Create a list of potential video series or webinar ideas related to [topic]
+             ```
 
-         ``` {.wrap}
-         Research competitor strategies related to [topic]
-         ```
+             ``` {.wrap}
+             Research competitor strategies related to [topic]
+             ```
 
-         ``` {.wrap}
-         Find canonical tag examples related to [topic]
-         ```
+             ``` {.wrap}
+             Find canonical tag examples related to [topic]
+             ```
 
-         ``` {.wrap}
-         Create an example keyword list targeting multiple geographic locations for [topic]
-         ```
+             ``` {.wrap}
+             Create an example keyword list targeting multiple geographic locations for [topic]
+             ```
 
-         ``` {.wrap}
-         Generate keyword ideas targeting different stages of the customer purchase funnel for [topic]
-         ```
+             ``` {.wrap}
+             Generate keyword ideas targeting different stages of the customer purchase funnel for [topic]
+             ```
 
-         ``` {.wrap}
-         Identify industry hashtags related to [topic].
-         ```
+             ``` {.wrap}
+             Identify industry hashtags related to [topic].
+             ```
 
   {.collapsible}
 
